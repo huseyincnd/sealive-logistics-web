@@ -88,9 +88,9 @@ export default function RootLayout({
 
               {/* Language Selector */}
               <div className="hidden md:flex items-center space-x-2 text-sm">
-                <button className="text-gray-300 hover:text-white transition-colors">TR</button>
-                <span className="text-gray-500">|</span>
-                <button className="text-gray-300 hover:text-white transition-colors">EN</button>
+                <button className="text-gray-300 hover:text-white transition-colors"></button>
+                <span className="text-gray-500"></span>
+                <button className="text-gray-300 hover:text-white transition-colors"></button>
               </div>
 
               {/* Mobile Menu Button */}

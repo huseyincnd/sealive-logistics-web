@@ -160,7 +160,7 @@ const content = {
         },
         {
           name: "Hapag-Lloyd",
-          logo: "/shipping-lines/Hapag-Lloyd.png",
+          logo: "/shipping-lines/hapag-lloyd.png",
         },
       ] as Reference[]
     },
@@ -325,7 +325,7 @@ const content = {
         },
         {
           name: "Hapag-Lloyd",
-          logo: "/shipping-lines/Hapag-Lloyd.png",
+          logo: "/shipping-lines/hapag-lloyd.png",
         },
       ] as Reference[]
     },

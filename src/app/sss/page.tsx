@@ -53,7 +53,7 @@ export default function FAQ() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Hero Section */}
-      <section className="relative h-[40vh] overflow-hidden">
+      <section className="relative h-[60vh] overflow-hidden">
         <motion.div
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -61,8 +61,12 @@ export default function FAQ() {
           className="absolute inset-0"
         >
           <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/faq-hero.jpg')" }}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ 
+              backgroundImage: "url('/faq-hero.jpg')",
+              height: '100%',
+              minHeight: '400px'
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
         </motion.div>

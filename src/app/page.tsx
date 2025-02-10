@@ -18,343 +18,212 @@ interface Reference {
 
 // Dil içerikleri
 const content = {
-  tr: {
-    hero: {
-      company: "SEALIVE LOJİSTİK",
-      title: "Global Yük Taşımacılığında",
-      subtitle: "Güvenilir Çözüm Ortağınız",
-      description: "Hapag-Lloyd, CMA CGM, MSC ve Maersk ile dünya çapında deniz taşımacılığı çözümleri.",
-      buttons: {
-        quote: "Hemen Teklif Alın",
-        contact: "İletişime Geçin"
-      }
-    },
-    form: {
-      title: "Hızlı Fiyat Teklifi",
-      origin: "Yükleme Limanı",
-      originPlaceholder: "ör: Istanbul",
-      destination: "Varış Limanı",
-      destinationPlaceholder: "ör: Barcelona",
-      containerType: "Konteyner Tipi",
-      getPrice: "Fiyat Sorgula"
-    },
-    services: {
-      title: "Taşımacılık Çözümlerimiz",
-      description: "Dünya'nın önde gelen konteyner hatları ile FCL ve LCL taşımacılık hizmetleri sunuyoruz. Her türlü yükünüz için en uygun çözümü ve en rekabetçi fiyatı garanti ediyoruz.",
-      items: [
-        {
-          title: "FCL Taşımacılık",
-          description: "Tüm konteyner tipleriyle dünya çapında FCL taşımacılık hizmetleri",
-          icon: "🚢"
-        },
-        {
-          title: "LCL Taşımacılık",
-          description: "Parsiyel yükleriniz için ekonomik konsolidasyon çözümleri",
-          icon: "📦"
-        },
-        {
-          title: "Gümrükleme",
-          description: "İthalat ve ihracat gümrük işlemleriniz için uçtan uca hizmet",
-          icon: "📋"
-        }
-      ]
-    },
-    process: {
-      title: "Operasyon Sürecimiz",
-      description: "Yükünüzü teslim aldığımız andan teslimat noktasına ulaşana kadar profesyonel ekibimizle yanınızdayız. Her aşamada şeffaf bilgilendirme ve kesintisiz iletişim sağlıyoruz.",
-      steps: [
-        {
-          title: "Fiyat Teklifi",
-          description: "En uygun hat ve rota için hızlı fiyat teklifi"
-        },
-        {
-          title: "Booking",
-          description: "Seçtiğiniz hat üzerinden hızlı booking işlemi"
-        },
-        {
-          title: "Dokümantasyon",
-          description: "B/L ve gümrük evraklarının hazırlanması"
-        },
-        {
-          title: "Takip & Teslimat",
-          description: "Konteyner takibi ve sorunsuz teslimat"
-        }
-      ]
-    },
-    network: {
-      title: "Global Ağımız",
-      description: "Dünyanın önde gelen konteyner hatları ile çalışıyor, 100'den fazla limanda hizmet veriyoruz. Global acente ağımız ve güçlü hat partnerliklerimiz ile yükünüzü dünyanın her noktasına ulaştırıyoruz.",
-      stats: [
-        { value: "100+", label: "Liman" },
-        { value: "50+", label: "Ülke" },
-        { value: "20+", label: "Hat Partneri" },
-        { value: "1000+", label: "Rota" }
-      ]
-    },
-    advantages: {
-      title: "Neden SeaLive Lojistik?",
-      items: [
-        {
-          title: "Rekabetçi Fiyatlar",
-          description: "Büyük hat anlaşmalarımız sayesinde avantajlı konteyner fiyatları",
-          icon: "💰"
-        },
-        {
-          title: "Esnek Çözümler",
-          description: "FCL, LCL ve özel ekipman çözümleriyle her türlü yük için hizmet",
-          icon: "🔄"
-        },
-        {
-          title: "7/24 Operasyon",
-          description: "Kesintisiz operasyon ve booking desteği",
-          icon: "⏰"
-        },
-        {
-          title: "Online Takip",
-          description: "Konteyner ve yük takibini online platformumuzdan anlık izleyin",
-          icon: "🔍"
-        }
-      ]
-    },
-    contact: {
-      title: "İletişime Geçin",
-      description: "Lojistik ihtiyaçlarınız için bizimle iletişime geçin. Size özel çözümler sunalım.",
-      form: {
-        name: "İsim Soyisim",
-        namePlaceholder: "Adınız Soyadınız",
-        email: "E-posta",
-        emailPlaceholder: "ornek@email.com",
-        phone: "Telefon",
-        phonePlaceholder: "+90 (___) ___ __ __",
-        message: "Mesajınız",
-        messagePlaceholder: "Mesajınızı buraya yazın...",
-        submit: "Gönder"
-      },
-      address: {
-        title: "Adres",
-        value: "İstanbul, Türkiye"
-      },
-      phone: {
-        title: "Telefon",
-        value: "+90 (212) 123 45 67"
-      },
-      email: {
-        title: "E-posta",
-        value: "info@sealive.com"
-      }
-    },
-    references: {
-      title: "Referanslarımız",
-      items: [
-        {
-          name: "Maersk",
-          logo: "/shipping-lines/maersk.png",
-        },
-        {
-          name: "CMA CGM",
-          logo: "/shipping-lines/cmacgm.png",
-        },
-        {
-          name: "MSC",
-          logo: "/shipping-lines/msc.png",
-        },
-        {
-          name: "Hapag-Lloyd",
-          logo: "/shipping-lines/hapag-lloyd.png",
-        },
-      ] as Reference[]
-    },
-    shippingLines: [
-      {
-        name: "Maersk",
-        logo: "/shipping-lines/maersk.png"
-      },
-      {
-        name: "CMA CGM",
-        logo: "/shipping-lines/cmacgm.png"
-      },
-      {
-        name: "MSC",
-        logo: "/shipping-lines/msc.png"
-      },
-      {
-        name: "Hapag-Lloyd",
-        logo: "/shipping-lines/hapag-lloyd.png"
-      }
-    ] as ShippingLine[]
+  hero: {
+    company: "SEALIVE LOJİSTİK",
+    title: "Global Yük Taşımacılığında",
+    subtitle: "Güvenilir Çözüm Ortağınız",
+    description: "Hapag-Lloyd, CMA CGM, MSC ve Maersk ile dünya çapında deniz taşımacılığı çözümleri.",
+    buttons: {
+      quote: "Hemen Teklif Alın",
+      contact: "İletişime Geçin"
+    }
   },
-  en: {
-    hero: {
-      company: "SEALIVE LOGISTICS",
-      title: "Your Trusted Partner in",
-      subtitle: "Global Freight Transportation",
-      description: "Worldwide shipping solutions with Hapag-Lloyd, CMA CGM, MSC, and Maersk.",
-      buttons: {
-        quote: "Get a Quote",
-        contact: "Contact Us"
+  form: {
+    title: "Hızlı Fiyat Teklifi",
+    origin: "Yükleme Limanı",
+    originPlaceholder: "ör: Istanbul",
+    destination: "Varış Limanı",
+    destinationPlaceholder: "ör: Barcelona",
+    containerType: "Konteyner Tipi",
+    getPrice: "Fiyat Sorgula"
+  },
+  services: {
+    title: "Taşımacılık Çözümlerimiz",
+    description: "Dünya'nın önde gelen konteyner hatları ile FCL ve LCL taşımacılık hizmetleri sunuyoruz. Her türlü yükünüz için en uygun çözümü ve en rekabetçi fiyatı garanti ediyoruz.",
+    items: [
+      {
+        title: "FCL Taşımacılık",
+        description: "Tüm konteyner tipleriyle dünya çapında FCL taşımacılık hizmetleri",
+        icon: "🚢"
+      },
+      {
+        title: "LCL Taşımacılık",
+        description: "Parsiyel yükleriniz için ekonomik konsolidasyon çözümleri",
+        icon: "📦"
+      },
+      {
+        title: "Gümrükleme",
+        description: "İthalat ve ihracat gümrük işlemleriniz için uçtan uca hizmet",
+        icon: "📋"
       }
-    },
+    ]
+  },
+  process: {
+    title: "Operasyon Sürecimiz",
+    description: "Yükünüzü teslim aldığımız andan teslimat noktasına ulaşana kadar profesyonel ekibimizle yanınızdayız. Her aşamada şeffaf bilgilendirme ve kesintisiz iletişim sağlıyoruz.",
+    steps: [
+      {
+        title: "Fiyat Teklifi",
+        description: "En uygun hat ve rota için hızlı fiyat teklifi"
+      },
+      {
+        title: "Booking",
+        description: "Seçtiğiniz hat üzerinden hızlı booking işlemi"
+      },
+      {
+        title: "Dokümantasyon",
+        description: "B/L ve gümrük evraklarının hazırlanması"
+      },
+      {
+        title: "Takip & Teslimat",
+        description: "Konteyner takibi ve sorunsuz teslimat"
+      }
+    ]
+  },
+  network: {
+    title: "Global Ağımız",
+    description: "Dünyanın önde gelen konteyner hatları ile çalışıyor, 100'den fazla limanda hizmet veriyoruz. Global acente ağımız ve güçlü hat partnerliklerimiz ile yükünüzü dünyanın her noktasına ulaştırıyoruz.",
+    stats: [
+      { value: "100+", label: "Liman" },
+      { value: "50+", label: "Ülke" },
+      { value: "20+", label: "Hat Partneri" },
+      { value: "1000+", label: "Rota" }
+    ]
+  },
+  advantages: {
+    title: "Neden SeaLive Lojistik?",
+    items: [
+      {
+        title: "Rekabetçi Fiyatlar",
+        description: "Büyük hat anlaşmalarımız sayesinde avantajlı konteyner fiyatları",
+        icon: "💰"
+      },
+      {
+        title: "Esnek Çözümler",
+        description: "FCL, LCL ve özel ekipman çözümleriyle her türlü yük için hizmet",
+        icon: "🔄"
+      },
+      {
+        title: "7/24 Operasyon",
+        description: "Kesintisiz operasyon ve booking desteği",
+        icon: "⏰"
+      },
+      {
+        title: "Online Takip",
+        description: "Konteyner ve yük takibini online platformumuzdan anlık izleyin",
+        icon: "🔍"
+      }
+    ]
+  },
+  contact: {
+    title: "İletişime Geçin",
+    description: "Lojistik ihtiyaçlarınız için bizimle iletişime geçin. Size özel çözümler sunalım.",
     form: {
-      title: "Quick Quote",
-      origin: "Port of Loading",
-      originPlaceholder: "e.g. Istanbul",
-      destination: "Port of Discharge",
-      destinationPlaceholder: "e.g. Barcelona",
-      containerType: "Container Type",
-      getPrice: "Get Price"
+      name: "İsim Soyisim",
+      namePlaceholder: "Adınız Soyadınız",
+      email: "E-posta",
+      emailPlaceholder: "ornek@email.com",
+      phone: "Telefon",
+      phonePlaceholder: "+90 (___) ___ __ __",
+      message: "Mesajınız",
+      messagePlaceholder: "Mesajınızı buraya yazın...",
+      submit: "Gönder"
     },
-    services: {
-      title: "Our Transportation Solutions",
-      description: "We provide FCL and LCL shipping services with world's leading container lines. We guarantee the most suitable solution and competitive prices for all your cargo.",
-      items: [
-        {
-          title: "FCL Transportation",
-          description: "Worldwide FCL transportation services with all container types",
-          icon: "🚢"
-        },
-        {
-          title: "LCL Transportation",
-          description: "Economic consolidation solutions for your partial shipments",
-          icon: "📦"
-        },
-        {
-          title: "Customs Clearance",
-          description: "End-to-end service for your import and export customs operations",
-          icon: "📋"
-        }
-      ]
+    address: {
+      title: "Adres",
+      value: "İstanbul, Türkiye"
     },
-    process: {
-      title: "Our Operation Process",
-      description: "We are with you from the moment we receive your cargo until it reaches the delivery point with our professional team. We provide transparent information and continuous communication at every stage.",
-      steps: [
-        {
-          title: "Price Quote",
-          description: "Quick price quote for the most suitable line and route"
-        },
-        {
-          title: "Booking",
-          description: "Fast booking process through your chosen line"
-        },
-        {
-          title: "Documentation",
-          description: "Preparation of B/L and customs documents"
-        },
-        {
-          title: "Tracking & Delivery",
-          description: "Container tracking and smooth delivery"
-        }
-      ]
+    phone: {
+      title: "Telefon",
+      value: "+90 (212) 123 45 67"
     },
-    network: {
-      title: "Our Global Network",
-      description: "We work with the world's leading container lines and provide service in more than 100 ports. With our global agency network and strong line partnerships, we deliver your cargo to every point in the world.",
-      stats: [
-        { value: "100+", label: "Ports" },
-        { value: "50+", label: "Countries" },
-        { value: "20+", label: "Line Partners" },
-        { value: "1000+", label: "Routes" }
-      ]
-    },
-    advantages: {
-      title: "Why SeaLive Logistics?",
-      items: [
-        {
-          title: "Competitive Prices",
-          description: "Advantageous container prices thanks to our major line agreements",
-          icon: "💰"
-        },
-        {
-          title: "Flexible Solutions",
-          description: "Service for all types of cargo with FCL, LCL and special equipment solutions",
-          icon: "🔄"
-        },
-        {
-          title: "24/7 Operation",
-          description: "Continuous operation and booking support",
-          icon: "⏰"
-        },
-        {
-          title: "Online Tracking",
-          description: "Track your container and cargo instantly from our online platform",
-          icon: "🔍"
-        }
-      ]
-    },
-    contact: {
-      title: "Contact Us",
-      description: "Get in touch with us for your logistics needs. Let us offer you customized solutions.",
-      form: {
-        name: "Full Name",
-        namePlaceholder: "Your Full Name",
-        email: "Email",
-        emailPlaceholder: "example@email.com",
-        phone: "Phone",
-        phonePlaceholder: "+90 (___) ___ __ __",
-        message: "Message",
-        messagePlaceholder: "Write your message here...",
-        submit: "Send"
-      },
-      address: {
-        title: "Address",
-        value: "Istanbul, Turkey"
-      },
-      phone: {
-        title: "Phone",
-        value: "+90 (212) 123 45 67"
-      },
-      email: {
-        title: "Email",
-        value: "info@sealive.com"
-      }
-    },
-    references: {
-      title: "Our References",
-      items: [
-        {
-          name: "Maersk",
-          logo: "/shipping-lines/maersk.png",
-        },
-        {
-          name: "CMA CGM",
-          logo: "/shipping-lines/cmacgm.png",
-        },
-        {
-          name: "MSC",
-          logo: "/shipping-lines/msc.png",
-        },
-        {
-          name: "Hapag-Lloyd",
-          logo: "/shipping-lines/hapag-lloyd.png",
-        },
-      ] as Reference[]
-    },
-    shippingLines: [
+    email: {
+      title: "E-posta",
+      value: "info@sealive.com"
+    }
+  },
+  references: {
+    title: "Referanslarımız",
+    items: [
       {
         name: "Maersk",
-        logo: "/shipping-lines/maersk.png"
+        logo: "/shipping-lines/maersk.png",
       },
       {
         name: "CMA CGM",
-        logo: "/shipping-lines/cmacgm.png"
+        logo: "/shipping-lines/cmacgm.png",
       },
       {
         name: "MSC",
-        logo: "/shipping-lines/msc.png"
+        logo: "/shipping-lines/msc.png",
       },
       {
         name: "Hapag-Lloyd",
-        logo: "/shipping-lines/hapag-lloyd.png"
-      }
-    ] as ShippingLine[]
-  }
+        logo: "/shipping-lines/hapag-lloyd.png",
+      },
+    ] as Reference[]
+  },
+  shippingLines: [
+    {
+      name: "Maersk",
+      logo: "/shipping-lines/maersk.png"
+    },
+    {
+      name: "CMA CGM",
+      logo: "/shipping-lines/cmacgm.png"
+    },
+    {
+      name: "MSC",
+      logo: "/shipping-lines/msc.png"
+    },
+    {
+      name: "Hapag-Lloyd",
+      logo: "/shipping-lines/hapag-lloyd.png"
+    }
+  ] as ShippingLine[]
 };
 
 export default function Home() {
-  const [lang, setLang] = useState<'tr' | 'en'>('tr');
-  const [ref, inView] = useInView({
+  const [servicesRef, servicesInView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0,
+    rootMargin: '50px 0px 50px 0px',
+    initialInView: true
+  });
+
+  const [processRef, processInView] = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: '50px 0px 50px 0px',
+    initialInView: true
+  });
+
+  const [networkRef, networkInView] = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: '50px 0px 50px 0px',
+    initialInView: true
+  });
+
+  const [advantagesRef, advantagesInView] = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: '50px 0px 50px 0px',
+    initialInView: true
+  });
+
+  const [referencesRef, referencesInView] = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: '50px 0px 50px 0px',
+    initialInView: true
+  });
+
+  const [contactRef, contactInView] = useInView({
+    triggerOnce: true,
+    threshold: 0,
+    rootMargin: '50px 0px 50px 0px',
+    initialInView: true
   });
 
   const containerRef = useRef(null);
@@ -369,32 +238,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Language Switcher */}
-      <div className="fixed top-4 right-4 z-50">
-        <div className="bg-white/10 backdrop-blur-md rounded-full border border-white/20 p-1 flex space-x-1">
-          <button
-            onClick={() => setLang('tr')}
-            className={`px-3 py-1 rounded-full text-sm font-medium transition-all ${
-              lang === 'tr' 
-                ? 'bg-blue-600 text-white' 
-                : 'text-white/70 hover:text-white'
-            }`}
-          >
-            TR
-          </button>
-          <button
-            onClick={() => setLang('en')}
-            className={`px-3 py-1 rounded-full text-sm font-medium transition-all ${
-              lang === 'en' 
-                ? 'bg-blue-600 text-white' 
-                : 'text-white/70 hover:text-white'
-            }`}
-          >
-            EN
-          </button>
-        </div>
-      </div>
-
       {/* Hero Section */}
       <section ref={containerRef} className="relative min-h-screen overflow-hidden">
         {/* Paralax Background with 3D effect */}
@@ -412,8 +255,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-gray-900/40 to-gray-900/60 z-20 mix-blend-multiply"></div>
             <Image
               src="/sea-transport-hero.jpg"
-                   //hero-bg.webp
-              alt={lang === 'tr' ? "Lojistik arka plan" : "Logistics background"}
+              alt="Lojistik arka plan"
               fill
               className="object-cover"
               priority
@@ -434,7 +276,7 @@ export default function Home() {
                     transition={{ duration: 0.8 }}
                     className="text-sm font-semibold text-blue-600 tracking-wider mb-4"
                   >
-                    {content[lang].hero.company}
+                    {content.hero.company}
                   </motion.div>
                   
                   <motion.h1
@@ -443,9 +285,9 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
                   >
-                    {content[lang].hero.title}
+                    {content.hero.title}
                     <br />
-                    <span className="text-blue-100">{content[lang].hero.subtitle}</span>
+                    <span className="text-blue-100">{content.hero.subtitle}</span>
                   </motion.h1>
 
                   <motion.p
@@ -454,7 +296,7 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="text-xl text-gray-100 mb-8 max-w-2xl font-light"
                   >
-                    {content[lang].hero.description}
+                    {content.hero.description}
                   </motion.p>
 
                   <motion.div
@@ -464,16 +306,16 @@ export default function Home() {
                     className="flex flex-col sm:flex-row gap-4 mb-12"
                   >
                     <Link 
-                      href={lang === 'tr' ? "/teklif-al" : "/quote"} 
+                      href="/teklif-al" 
                       className="px-8 py-4 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-all transform hover:-translate-y-1 hover:shadow-lg"
                     >
-                      {content[lang].hero.buttons.quote}
+                      {content.hero.buttons.quote}
                     </Link>
                     <Link 
-                      href={lang === 'tr' ? "/iletisim" : "/contact"} 
+                      href="/iletisim" 
                       className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-full font-medium hover:bg-white/30 transition-all transform hover:-translate-y-1 hover:shadow-lg"
                     >
-                      {content[lang].hero.buttons.contact}
+                      {content.hero.buttons.contact}
                     </Link>
                   </motion.div>
 
@@ -484,7 +326,7 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 1 }}
                     className="grid grid-cols-2 sm:grid-cols-4 gap-4"
                   >
-                    {content[lang].shippingLines.map((line: ShippingLine, index: number) => (
+                    {content.shippingLines.map((line: ShippingLine, index: number) => (
                       <div 
                         key={line.name} 
                         className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex items-center justify-center group hover:bg-white/10 transition-all duration-300"
@@ -512,7 +354,7 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 0.8 }}
                     className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20"
                   >
-                    <h3 className="text-xl text-white mb-4 font-semibold">{content[lang].form.title}</h3>
+                    <h3 className="text-xl text-white mb-4 font-semibold">{content.form.title}</h3>
                     <form onSubmit={(e) => {
                       e.preventDefault();
                       const formData = new FormData(e.currentTarget);
@@ -521,31 +363,31 @@ export default function Home() {
                         destination: formData.get('destination'),
                         containerType: formData.get('containerType')
                       };
-                      window.location.href = `/${lang === 'tr' ? 'teklif-al' : 'quote'}?origin=${data.origin}&destination=${data.destination}&containerType=${data.containerType}`;
+                      window.location.href = `/teklif-al?origin=${data.origin}&destination=${data.destination}&containerType=${data.containerType}`;
                     }}>
                       <div className="space-y-4">
                         <div>
-                          <label className="text-gray-300 text-sm mb-1 block">{content[lang].form.origin}</label>
+                          <label className="text-gray-300 text-sm mb-1 block">{content.form.origin}</label>
                           <input 
                             name="origin"
                             type="text" 
-                            placeholder={content[lang].form.originPlaceholder}
+                            placeholder={content.form.originPlaceholder}
                             required
                             className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/10 text-white placeholder-gray-100 focus:outline-none focus:border-blue-500" 
                           />
                         </div>
                         <div>
-                          <label className="text-gray-300 text-sm mb-1 block">{content[lang].form.destination}</label>
+                          <label className="text-gray-300 text-sm mb-1 block">{content.form.destination}</label>
                           <input 
                             name="destination"
                             type="text" 
-                            placeholder={content[lang].form.destinationPlaceholder}
+                            placeholder={content.form.destinationPlaceholder}
                             required
                             className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/10 text-white placeholder-gray-100 focus:outline-none focus:border-blue-500" 
                           />
                         </div>
                         <div>
-                          <label className="text-gray-300 text-sm mb-1 block">{content[lang].form.containerType}</label>
+                          <label className="text-gray-300 text-sm mb-1 block">{content.form.containerType}</label>
                           <select 
                             name="containerType"
                             required
@@ -563,7 +405,7 @@ export default function Home() {
                         type="submit"
                         className="mt-6 w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all"
                       >
-                        {content[lang].form.getPrice}
+                        {content.form.getPrice}
                       </button>
                     </form>
                   </motion.div>
@@ -601,31 +443,150 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Infinite Carousel Section */}
+      <section className="py-12 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+        
+        <div className="relative">
+          {/* First Row */}
+          <motion.div
+            animate={{
+              x: [0, -1200],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 25,
+                ease: "linear",
+              },
+            }}
+            className="flex gap-16"
+          >
+            {[...Array(3)].map((_, setIndex) => (
+              <div key={setIndex} className="flex gap-16">
+                {[
+                  {
+                    name: "Maersk",
+                    logo: "/shipping-lines/maersk.png",
+                  },
+                  {
+                    name: "MSC",
+                    logo: "/shipping-lines/msc.png",
+                  },
+                  {
+                    name: "CMA CGM",
+                    logo: "/shipping-lines/cmacgm.png",
+                  },
+                  {
+                    name: "Hapag-Lloyd",
+                    logo: "/shipping-lines/hapag-lloyd.png",
+                  }
+                ].map((company, index) => (
+                  <div
+                    key={`${setIndex}-${index}`}
+                    className="min-w-[280px] h-[120px] p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:bg-white/10 transition-all duration-300 group flex items-center justify-center hover:scale-105"
+                  >
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={company.logo}
+                        alt={company.name}
+                        fill
+                        className="object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300"
+                        sizes="(max-width: 768px) 160px, 280px"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </motion.div>
+
+          {/* Second Row */}
+          <motion.div
+            animate={{
+              x: [-1200, 0],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 25,
+                ease: "linear",
+              },
+            }}
+            className="flex gap-16 mt-16"
+          >
+            {[...Array(3)].map((_, setIndex) => (
+              <div key={setIndex} className="flex gap-16">
+                {[
+                  {
+                    name: "Hapag-Lloyd",
+                    logo: "/shipping-lines/hapag-lloyd.png",
+                  },
+                  {
+                    name: "CMA CGM",
+                    logo: "/shipping-lines/cmacgm.png",
+                  },
+                  {
+                    name: "MSC",
+                    logo: "/shipping-lines/msc.png",
+                  },
+                  {
+                    name: "Maersk",
+                    logo: "/shipping-lines/maersk.png",
+                  }
+                ].map((company, index) => (
+                  <div
+                    key={`${setIndex}-${index}`}
+                    className="min-w-[280px] h-[120px] p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:bg-white/10 transition-all duration-300 group flex items-center justify-center hover:scale-105"
+                  >
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={company.logo}
+                        alt={company.name}
+                        fill
+                        className="object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300"
+                        sizes="(max-width: 768px) 160px, 280px"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Gradient Overlays for Smooth Edges */}
+        <div className="absolute left-0 top-0 w-40 h-full bg-gradient-to-r from-gray-900 to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 w-40 h-full bg-gradient-to-l from-gray-900 to-transparent z-10"></div>
+      </section>
+
       {/* Services Section */}
-      <section ref={ref} className="relative py-32 overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800">
+      <section ref={servicesRef} className="relative py-24 overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-4 relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={servicesInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-center text-white mb-8"
           >
-            {content[lang].services.title}
+            {content.services.title}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={servicesInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center text-gray-300 text-lg mb-20 max-w-3xl mx-auto"
           >
-            {content[lang].services.description}
+            {content.services.description}
           </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {content[lang].services.items.map((service, index) => (
+            {content.services.items.map((service, index) => (
               <motion.div
                 key={service.title}
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={servicesInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 group hover:-translate-y-1"
               >
@@ -639,30 +600,30 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="relative py-32 overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800">
+      <section ref={processRef} className="relative py-32 overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800">
         <div className="container mx-auto px-4 relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={processInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-center text-white mb-8"
           >
-            {content[lang].process.title}
+            {content.process.title}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={processInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center text-gray-100 text-lg mb-20 max-w-3xl mx-auto"
           >
-            {content[lang].process.description}
+            {content.process.description}
           </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {content[lang].process.steps.map((step, index) => (
+            {content.process.steps.map((step, index) => (
               <motion.div
                 key={step.title}
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={processInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className="relative"
               >
@@ -671,7 +632,7 @@ export default function Home() {
                     <div className="w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 flex items-center justify-center text-2xl font-bold text-white mx-auto mb-6 transform transition-transform group-hover:scale-110">
                       {index + 1}
                     </div>
-                    {index < content[lang].process.steps.length - 1 && (
+                    {index < content.process.steps.length - 1 && (
                       <div className="hidden md:block absolute top-10 left-full w-full h-[2px] bg-white/20">
                         <div className="absolute -right-1 -top-1 w-2 h-2 bg-white/40 rotate-45"></div>
                       </div>
@@ -687,32 +648,32 @@ export default function Home() {
       </section>
 
       {/* Network Stats Section */}
-      <section className="py-24 bg-gradient-to-b from-gray-800 to-gray-900 relative overflow-hidden">
+      <section ref={networkRef} className="py-24 bg-gradient-to-b from-gray-800 to-gray-900 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={networkInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}
                 className="text-4xl md:text-5xl font-bold text-white mb-8"
               >
-                {content[lang].network.title}
+                {content.network.title}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={networkInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-gray-300 text-lg mb-12"
               >
-                {content[lang].network.description}
+                {content.network.description}
               </motion.p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                {content[lang].network.stats.map((stat, index) => (
+                {content.network.stats.map((stat, index) => (
                   <motion.div
                     key={stat.label}
                     initial={{ opacity: 0, y: 20 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    animate={networkInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.8, delay: index * 0.1 }}
                     className="text-center p-6 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:bg-white/10 transition-colors"
                   >
@@ -739,7 +700,7 @@ export default function Home() {
       </section>
 
       {/* Why Us Section */}
-      <section className="relative py-32 overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800">
+      <section ref={advantagesRef} className="relative py-32 overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800">
         <div className="absolute inset-0 bg-black/20 mix-blend-multiply"></div>
         {/* Dekoratif elementler */}
         <div className="absolute inset-0">
@@ -768,18 +729,18 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={advantagesInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-center text-white mb-20"
           >
-            {content[lang].advantages.title}
+            {content.advantages.title}
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {content[lang].advantages.items.map((advantage, index) => (
+            {content.advantages.items.map((advantage, index) => (
               <motion.div
                 key={advantage.title}
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={advantagesInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 group"
               >
@@ -795,22 +756,22 @@ export default function Home() {
       </section>
 
       {/* References Section */}
-      <section className="py-24 bg-gradient-to-b from-gray-800 to-gray-900 relative overflow-hidden">
+      <section ref={referencesRef} className="py-24 bg-gradient-to-b from-gray-800 to-gray-900 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={referencesInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-center text-white mb-20"
           >
-            {content[lang].references.title}
+            {content.references.title}
           </motion.h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {content[lang].references.items.map((reference: Reference, index: number) => (
+            {content.references.items.map((reference: Reference, index: number) => (
               <motion.div
                 key={reference.name}
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={referencesInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 group"
               >
@@ -830,7 +791,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+      <section ref={contactRef} className="py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 mix-blend-overlay"></div>
           {[...Array(3)].map((_, i) => (
@@ -860,24 +821,24 @@ export default function Home() {
             <div>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={contactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}
                 className="text-4xl md:text-5xl font-bold text-white mb-8"
               >
-                {content[lang].contact.title}
+                {content.contact.title}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={contactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-gray-300 text-lg mb-12"
               >
-                {content[lang].contact.description}
+                {content.contact.description}
               </motion.p>
               <div className="space-y-8">
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
+                  animate={contactInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className="flex items-center space-x-6"
                 >
@@ -886,12 +847,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white text-lg mb-1">Adres</h3>
-                    <p className="text-gray-400">{content[lang].contact.address.title}</p>
+                    <p className="text-gray-400">{content.contact.address.title}</p>
                   </div>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
+                  animate={contactInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="flex items-center space-x-6"
                 >
@@ -900,12 +861,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white text-lg mb-1">Telefon</h3>
-                    <p className="text-gray-400">{content[lang].contact.phone.title}</p>
+                    <p className="text-gray-400">{content.contact.phone.title}</p>
                   </div>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
+                  animate={contactInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.8, delay: 0.5 }}
                   className="flex items-center space-x-6"
                 >
@@ -914,7 +875,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white text-lg mb-1">E-posta</h3>
-                    <p className="text-gray-400">{content[lang].contact.email.title}</p>
+                    <p className="text-gray-400">{content.contact.email.title}</p>
                   </div>
                 </motion.div>
               </div>
@@ -923,48 +884,48 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl blur-2xl"></div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
+                animate={contactInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="relative bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10"
               >
                 <form className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">{content[lang].contact.form.name}</label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">{content.contact.form.name}</label>
                     <input
                       type="text"
                       className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder={content[lang].contact.form.namePlaceholder}
+                      placeholder={content.contact.form.namePlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">{content[lang].contact.form.email}</label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">{content.contact.form.email}</label>
                     <input
                       type="email"
                       className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder={content[lang].contact.form.emailPlaceholder}
+                      placeholder={content.contact.form.emailPlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">{content[lang].contact.form.phone}</label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">{content.contact.form.phone}</label>
                     <input
                       type="tel"
                       className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder={content[lang].contact.form.phonePlaceholder}
+                      placeholder={content.contact.form.phonePlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">{content[lang].contact.form.message}</label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">{content.contact.form.message}</label>
                     <textarea
                       rows={4}
                       className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
-                      placeholder={content[lang].contact.form.messagePlaceholder}
+                      placeholder={content.contact.form.messagePlaceholder}
                     ></textarea>
                   </div>
                   <button
                     type="submit"
                     className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 rounded-xl font-medium hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
                   >
-                    {content[lang].contact.form.submit}
+                    {content.contact.form.submit}
                   </button>
                 </form>
               </motion.div>
